@@ -27,10 +27,10 @@ class NewTabl(QMainWindow):
                     i, j, QTableWidgetItem(elem))
             if int(row[2]) < t / 3:
                 self.good_num(i)
-            elif int(row[2]) > t * 2 / 3:
-                self.bad_num(i)
-            else:
+            elif int(row[2]) < t * 2 / 3 + 5:
                 self.sredn_num(i)
+            else:
+                self.bad_num(i)
 
         self.tabll.resize(500, 500)
 
