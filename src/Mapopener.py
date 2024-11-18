@@ -7,6 +7,7 @@ class Mapping(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setGeometry(1000, 200, 1000, 1000)
+        self.setWindowTitle('Google map')
         self.mapp = QWebEngineView(self)
         self.mapp.setUrl(QUrl('https://maps.google.com'))
         self.mapp.resize(1000, 1000)
